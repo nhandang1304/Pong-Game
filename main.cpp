@@ -19,7 +19,7 @@ int main() {
     Color color_ball = {242, 178, 247, 255};
 
     Paddle paddle1(gap_wall, screen_height / 2 - 65, 25, 130, {198, 255, 112, 255}, 15);
-    AIPaddle paddle2(screen_width - gap_wall - 25, screen_height / 2 - 65, 25, 130, {198, 255, 112, 255}, 12);
+    AIPaddle paddle2(screen_width - gap_wall - 25, screen_height / 2 - 65, 25, 130, {198, 255, 112, 255}, 9);
     Ball ball(screen_width / 2, screen_height / 2, 20, color_ball, 10, 12);
     StartButton startButton(screen_width / 2 - 60, screen_height / 2 - 25, 25, screen_width / 10, screen_height / 10, {211, 255, 87, 255});
     BackButton backButton(screen_width / 2 - screen_width / 14, screen_height / 2 + 300, screen_width / 7, screen_height / 11, {252, 99, 255, 255}, 20, "GO BACK");
