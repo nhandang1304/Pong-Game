@@ -58,6 +58,12 @@ void Paddle::Move(float screen_height){
     if (IsKeyDown(KEY_DOWN)){
         pos_y += speed;
     }
+    int touch = GetTouchPointCount();
+
+    if (touch > 0){
+        Vector2 point = GetTouchPosition(0);
+        pos_y = point.y - height/2;
+    }
     RangeMove(screen_height);
 }
 float Paddle::getPositionX(){
